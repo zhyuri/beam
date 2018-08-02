@@ -1,0 +1,22 @@
+[package]
+name = "beam"
+description = "Beam is a fast, reliable, configurable API gateway written in Rust"
+repository = "https://github.com/zhyuri/beam.git"
+license = "MIT"
+version = "0.1.0"
+authors = ["zhyuri <zhang1437@gmail.com>"]
+
+[dependencies]
+
+flexi_logger = "0.9"
+log = "0.4"
+
+# The core APIs, including the Serialize and Deserialize traits. Always
+# required when using Serde.
+serde = "1.0"
+
+# Support for #[derive(Serialize, Deserialize)]. Required if you want Serde
+# to work for structs and enums defined in your crate.
+serde_derive = "1.0"
+
+serde_yaml = "0.7"
